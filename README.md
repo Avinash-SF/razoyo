@@ -1,18 +1,13 @@
 # Razoyo
 
-To start your Phoenix server:
+Fraud is being detected in when we send a request with same access_token for a second time. Need to find a work arround.
 
-  * Run `mix setup` to install and setup dependencies
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+Solution might be to generate new access_token by sending the client secret back to server.
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+**or**
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+Am I missing something here? The documentation isn't clear, it doesn't provide much Info.
 
-## Learn more
+Ohhh, yeah! We also need to store that new access_token in Mnesia or PostGreSQL
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+- Let's go with postgres
