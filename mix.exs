@@ -58,7 +58,9 @@ defmodule Razoyo.MixProject do
       {:jason, "~> 1.2"},
       {:dns_cluster, "~> 0.1.1"},
       {:bandit, "~> 1.2"},
-      {:httpoison, "~> 2.0"}
+      {:httpoison, "~> 2.0"},
+      {:cors_plug, "~> 3.0"},
+      {:ex_rated, "~> 2.0"}
     ]
   end
 
