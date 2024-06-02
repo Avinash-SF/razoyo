@@ -19,7 +19,7 @@ defmodule Razoyo.MixProject do
   def application do
     [
       mod: {Razoyo.Application, []},
-      extra_applications: [:logger, :runtime_tools]
+      extra_applications: [:logger, :runtime_tools, :cors_plug, :ex_rated]
     ]
   end
 
