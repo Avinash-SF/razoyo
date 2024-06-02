@@ -1,0 +1,12 @@
+<.form for={} style="display: flex; justify-content: center; align-items: center "> 
+  <.input name="client_secret" disabled type="text" placeholder="Client Secret Key" value="qRIAKP5ywR5i6sGcv3dFbYDEKoUmV5V5" style="width: 400px; text-align: center;" />
+  <.button type="submit" name="submit" disabled >Send Key</.button>
+</.form>
+
+<br />
+<%= for transaction <- @transactions do %>
+  Account : <%= transaction["account"] %>
+  <br/>
+  Amount : <%= transaction["amount"] %>
+  <hr />
+<% end %>
